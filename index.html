@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,51 +13,36 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            text-align: center; /* Center all text */
         }
         header {
             background-color: #34a853;
-            color: black;
+            color: white;
             padding: 40px 20px;
-            text-align: center;
         }
         section {
             padding: 40px 20px;
         }
         h1, h2 {
-            font-size: 40px;
+            font-size: 28px;
             font-weight: bold;
         }
         .section-title {
             border-bottom: 2px solid #34a853;
             padding-bottom: 10px;
             margin-bottom: 20px;
+            display: inline-block; /* Keeps underline tight when centered */
         }
         ul, ol {
-            margin-left: 30px;
-        }
-        .contact-info {
-            background-color: #e0f7ea;
-            padding: 25px;
-            border-radius: 10px;
+            margin: 0 auto;
+            display: inline-block;
+            text-align: left; /* Align list items properly */
         }
         footer {
             background-color: #34a853;
             color: white;
-            text-align: center;
             padding: 20px;
             font-size: 20px;
-        }
-        nav {
-            background-color: #d7f8e3;
-            padding: 15px 20px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 20px;
-            text-decoration: none;
-            color: #2e4e3f;
-            font-weight: bold;
-            font-size: 22px;
         }
         .email-animation, .icon-animation {
             font-size: 26px;
@@ -69,9 +53,17 @@
         .icon-animation {
             font-size: 36px;
         }
+        .contact-inline {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #333;
+        }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
+        }
+        a {
+            color: #2e4e3f;
         }
     </style>
 </head>
@@ -82,38 +74,32 @@
     <p>Support Made Simple — for Seniors and Others in Need</p>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="contact.html">Contact Us</a>
-</nav>
-
 <section>
     <h2 class="section-title">Our Services</h2>
     <ul>
-        <li>Phone,Video Call, and in person Support</li>
-        <li>Email Creation & Troubleshooting</li>
-        <li>PC/ Mobile Device Setup & Guidance</li>
+        <li>Phone & Video Call Support</li>
+        <li>Email Help & Troubleshooting</li>
+        <li>Device Setup & Guidance</li>
         <li>Internet & Wi-Fi Support</li>
         <li>Fraud & Scam Protection Assistance</li>
         <li>In-Home Support for Anywhere in the Niagara Region</li>
-        <li>Domain & Website Creation</li>
+        <li>Domain and Website Creation</li>
         <li>Email Address Setup</li>
-        <li>Smart Home Devices & Support</li>
         <li>Social Media Support (Facebook, Instagram, etc.)</li>
         <li>And More — Just Ask!</li>
     </ul>
-
-    <div>📱💬🖥️ </div>
+    <div class="icon-animation">📱💬🖥️</div>
 </section>
 
 <section>
     <h2 class="section-title">How It Works</h2>
     <ol>
-        <li>Call or email us for more info </li>
-        <li>We patiently walk you through, or complete the steps for you!</li>
+        <li>Call or email us to describe your issue</li>
+        <li>We patiently walk you through the solution</li>
         <li>No tech jargon — just clear, simple help</li>
     </ol>
-    <p class="email-animation">📤 Sending help right to your inbox...</p>
+    <p class="email-animation">📤 Sending help right to your inbox!</p>
+    <p class="contact-inline">Contact us: 📞 (123) 456-7890 | 📧 <a href="mailto:easy@easyhelp.tech">easy@easyhelp.tech</a></p>
 </section>
 
 <footer>
